@@ -1,0 +1,97 @@
+{
+    
+    "pagamentosAVencer": [
+
+        {"2020-01-15": [ {"beneficiario": "NOME DO CEDENTE (teste 0001)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE REALMENTE MUUUUUUUUUITO LONGO, MAS MUUUUUUUUUITO LONGO MESMO  (teste 0002)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0003)", "valorAPagar": 100.00}]},
+        {"2020-01-16": [ {"beneficiario": "NOME DO CEDENTE (teste 0004)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0005)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0006)", "valorAPagar": 100.00}]},
+        {"2020-01-17": [ {"beneficiario": "NOME DO CEDENTE (teste 0007)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0008)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0009)", "valorAPagar": 100.00}]},
+        {"2020-01-18": [ {"beneficiario": "NOME DO CEDENTE (teste 0010)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0011)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0012)", "valorAPagar": 100.00}]},
+        {"2020-01-19": [ {"beneficiario": "NOME DO CEDENTE (teste 0013)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0014)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0015)", "valorAPagar": 100.00}]},
+        {"2020-01-20": [ {"beneficiario": "NOME DO CEDENTE (teste 0016)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0017)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0018)", "valorAPagar": 100.00}]},
+        {"2020-01-21": [ {"beneficiario": "NOME DO CEDENTE (teste 0019)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0020)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0021)", "valorAPagar": 100.00}]}
+   
+    ],
+    
+    "pagamentosVencidos": [
+    
+        {"2020-01-15": [ {"beneficiario": "NOME DO CEDENTE (teste 0022)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0023)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0024)", "valorAPagar": 100.00}]},
+        {"2020-01-16": [ {"beneficiario": "NOME DO CEDENTE (teste 0025)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0026)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0027)", "valorAPagar": 100.00}]},
+        {"2020-01-17": [ {"beneficiario": "NOME DO CEDENTE (teste 0028)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0029)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0030)", "valorAPagar": 100.00}]},
+        {"2020-01-18": [ {"beneficiario": "NOME DO CEDENTE (teste 0031)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0032)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0033)", "valorAPagar": 100.00}]},
+        {"2020-01-19": [ {"beneficiario": "NOME DO CEDENTE (teste 0034)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0035)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0036)", "valorAPagar": 100.00}]},
+        {"2020-01-20": [ {"beneficiario": "NOME DO CEDENTE (teste 0037)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0038)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0039)", "valorAPagar": 100.00}]},
+        {"2020-01-21": [ {"beneficiario": "NOME DO CEDENTE (teste 0040)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0041)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0042)", "valorAPagar": 100.00}]}
+    
+    ],
+    
+    "pagamentosExcluidos": [
+    
+        {"2020-01-15": [ {"beneficiario": "NOME DO CEDENTE (teste 0043)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0044)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0045)", "valorAPagar": 100.00}]},
+        {"2020-01-16": [ {"beneficiario": "NOME DO CEDENTE (teste 0046)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0047)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0048)", "valorAPagar": 100.00}]},
+        {"2020-01-17": [ {"beneficiario": "NOME DO CEDENTE (teste 0049)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0050)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0051)", "valorAPagar": 100.00}]},
+        {"2020-01-18": [ {"beneficiario": "NOME DO CEDENTE (teste 0052)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0053)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0054)", "valorAPagar": 100.00}]},
+        {"2020-01-19": [ {"beneficiario": "NOME DO CEDENTE (teste 0055)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0056)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0057)", "valorAPagar": 100.00}]},
+        {"2020-01-20": [ {"beneficiario": "NOME DO CEDENTE (teste 0058)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0059)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0060)", "valorAPagar": 100.00}]},
+        {"2020-01-21": [ {"beneficiario": "NOME DO CEDENTE (teste 0061)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0062)", "valorAPagar": 100.00},
+                         {"beneficiario": "NOME DO CEDENTE (teste 0063)", "valorAPagar": 100.00}]}
+    
+    
+    ],
+    
+    "pagamentosAVencerQtdTotal": 21,
+    "pagamentosAVencerTotalAPagar": 2100,
+    
+    "pagamentosVencidosQtdTotal": 21,
+    "pagamentosVencidosTotalAPagar": 2100,
+    
+    "pagamentosExcluidosQtdTotal": 21,
+    "pagamentosExcluidosTotalAPagar": 2100,
+    
+    
+    "paginaAtual": 1,
+    "ultimaPagina": 1,
+
+    
+    "statusCode": 200
+}
