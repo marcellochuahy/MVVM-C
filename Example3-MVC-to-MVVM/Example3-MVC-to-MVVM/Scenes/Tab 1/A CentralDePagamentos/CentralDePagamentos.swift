@@ -108,24 +108,55 @@ extension CentralDePagamentos {
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CelulaDaCentralDePagamentos
-    
+
     switch(indexPath.section) {
     case 0:
       switch(indexPath.row) {
-        
+
       case 0:
+
+        // ----------------------------------------------------------------------------------------------
+        /*
+        // Refatoração:
         cell.beneficiarioLabel.text = "\(pagamentosAgrupadosPorTipo.pagamentosAVencerQtd ?? 0) pagamentos a vencer"
         cell.valorAPagarLabel.text = "R$ \(pagamentosAgrupadosPorTipo.pagamentosAVencerTotalAPagar ?? 0)"
+        */
+        
+        let viewModel = ViewModelQuantidadeDePagamentos(
+          tipoDePagamento: .pagamentosAVencer,
+          quantidadeTotal: pagamentosAgrupadosPorTipo.pagamentosAVencerQtd ?? 0,
+          valorTotal: pagamentosAgrupadosPorTipo.pagamentosAVencerTotalAPagar ?? 0
+        )
+        
+        cell.beneficiarioLabel.attributedText = viewModel.quantidadeAttributedString
+        cell.valorAPagarLabel.attributedText  = viewModel.valorAttributedString
+        
+        // Abaixo permanece igual:
+        
         cell.leftBarView.backgroundColor = UIColor.CustomStyle.yellow
         return cell
+
+        // ----------------------------------------------------------------------------------------------
         
       case 1:
-        cell.beneficiarioLabel.text = "\(pagamentosAgrupadosPorTipo.pagamentosVencidosQtd ?? 0) pagamentos vencidos"
-        cell.valorAPagarLabel.text = "R$ \(pagamentosAgrupadosPorTipo.pagamentosVencidosTotalAPagar ?? 0)"
+        
+        // Refatorado:
+        
+        let viewModel = ViewModelQuantidadeDePagamentos(
+          tipoDePagamento: .pagamentosVencidos,
+          quantidadeTotal: pagamentosAgrupadosPorTipo.pagamentosVencidosQtd ?? 0,
+          valorTotal: pagamentosAgrupadosPorTipo.pagamentosVencidosTotalAPagar ?? 0
+        )
+        
+        cell.beneficiarioLabel.attributedText = viewModel.quantidadeAttributedString
+        cell.valorAPagarLabel.attributedText  = viewModel.valorAttributedString
         cell.leftBarView.backgroundColor = UIColor.CustomStyle.purple
         return cell
         
       case 2:
+        
+        // Não refatorado:
+        
         cell.beneficiarioLabel.text = "\(pagamentosAgrupadosPorTipo.pagamentosExcluidosQtd ?? 0) pagamentos excluídos"
         cell.valorAPagarLabel.text = "R$ \(pagamentosAgrupadosPorTipo.pagamentosExcluidosTotalAPagar ?? 0)"
         cell.leftBarView.backgroundColor = UIColor.CustomStyle.darkRed

@@ -58,11 +58,6 @@ class ComprovanteDePagamento: UITableViewController {
     
     return cell
   }
-  
-  
-  // MARK: - Actions
-  //  @IBAction func dismiss(_ sender: UIBarButtonItem) {
-  //    dismiss(animated: true, completion: nil)
-  //  }
+
   
 }

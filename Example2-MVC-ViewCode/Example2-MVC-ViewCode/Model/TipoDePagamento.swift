@@ -7,7 +7,7 @@
 //
 
 enum TipoDePagamento: String {
-  case pagamentosAVencer   = "pagamentos a vencer"
-  case pagamentosVencidos  = "pagamentos vencidos"
-  case pagamentosExcluidos = "pagamentos excluídos"
+  case pagamentosAVencer   = "a vencer"
+  case pagamentosVencidos  = "vencidos"
+  case pagamentosExcluidos = "excluídos"
 }

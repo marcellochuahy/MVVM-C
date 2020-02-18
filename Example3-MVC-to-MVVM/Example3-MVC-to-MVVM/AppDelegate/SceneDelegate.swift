@@ -15,16 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
     
     guard let windowScene = (scene as? UIWindowScene) else { return }
-    
-//    window = UIWindow(frame: UIScreen.main.bounds)
-//    window?.rootViewController = UINavigationController(rootViewController: YourTabBarController())
-//    window?.makeKeyAndVisible()
 
-    // OK
-    //    window = UIWindow(windowScene: windowScene)
-    //    window?.rootViewController = TabBarController()
-    //    window?.makeKeyAndVisible()
-    
     window = UIWindow(windowScene: windowScene)
     window?.rootViewController = TabBarController()
     window?.makeKeyAndVisible()
@@ -32,35 +23,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }
 
 }
-
-
-
-//extension SceneDelegate {
-//
-//  func setupForNavigationViewController() {
-//
-//    // ⚠️ Descomentar caso não esteja usando Tab Bar Navigation
-//    // let navController = UINavigationController()
-//    // coordinator = MainCoordinator(navigationController: navController)
-//    // coordinator?.start()
-//    // window = UIWindow(frame: UIScreen.main.bounds)
-//    // window?.rootViewController = navController
-//    // window?.makeKeyAndVisible()
-//
-//  }
-//
-//  func addTabBarController() {
-//    //    window = UIWindow(frame: UIScreen.main.bounds)
-//    //    window?.rootViewController = MainTabBarController()
-//    //    window?.makeKeyAndVisible()
-//  }
-//
-//}
-
-
-
-
-
-
-
-

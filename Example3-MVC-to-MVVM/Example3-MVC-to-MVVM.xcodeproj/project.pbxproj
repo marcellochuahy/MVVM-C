@@ -28,6 +28,7 @@
 		5F6F32B423FBE7EB00C73418 /* OutroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F32B323FBE7EB00C73418 /* OutroViewController.swift */; };
 		5F6F32B823FBE86E00C73418 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F32B623FBE86E00C73418 /* UIFontExtension.swift */; };
 		5F6F32B923FBE86E00C73418 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F32B723FBE86E00C73418 /* UIColorExtension.swift */; };
+		5F6F32DE23FC28EF00C73418 /* ViewModelQuantidadeDePagamentos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F32DD23FC28EF00C73418 /* ViewModelQuantidadeDePagamentos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,15 +46,16 @@
 		5F6F329D23FBE6A200C73418 /* webServicePagamentos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = webServicePagamentos.json; path = "../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Network/webServicePagamentos.json"; sourceTree = "<group>"; };
 		5F6F32A023FBE70400C73418 /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewCodeProtocol.swift; path = "../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Scenes/ViewCodeProtocol.swift"; sourceTree = "<group>"; };
 		5F6F32A323FBE72500C73418 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = "../../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Scenes/Tab Bar/TabBarController.swift"; sourceTree = "<group>"; };
-		5F6F32A723FBE7B500C73418 /* CelulaDaCentralDePagamentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CelulaDaCentralDePagamentos.swift; path = "../../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Scenes/Tab 1/CentralDePagamentos/CelulaDaCentralDePagamentos.swift"; sourceTree = "<group>"; };
-		5F6F32A823FBE7B500C73418 /* CentralDePagamentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CentralDePagamentos.swift; path = "../../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Scenes/Tab 1/CentralDePagamentos/CentralDePagamentos.swift"; sourceTree = "<group>"; };
-		5F6F32AB23FBE7C700C73418 /* ComprovanteDePagamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ComprovanteDePagamento.swift; path = "../../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Scenes/Tab 1/Comprovante/ComprovanteDePagamento.swift"; sourceTree = "<group>"; };
-		5F6F32AC23FBE7C700C73418 /* CelulaDoComprovanteDePagamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CelulaDoComprovanteDePagamento.swift; path = "../../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Scenes/Tab 1/Comprovante/CelulaDoComprovanteDePagamento.swift"; sourceTree = "<group>"; };
-		5F6F32AF23FBE7D700C73418 /* CelulaDaListaDePagamentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CelulaDaListaDePagamentos.swift; path = "../../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Scenes/Tab 1/ListaDePagamentos/CelulaDaListaDePagamentos.swift"; sourceTree = "<group>"; };
-		5F6F32B023FBE7D700C73418 /* ListaDePagamentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaDePagamentos.swift; path = "../../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Scenes/Tab 1/ListaDePagamentos/ListaDePagamentos.swift"; sourceTree = "<group>"; };
+		5F6F32A723FBE7B500C73418 /* CelulaDaCentralDePagamentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelulaDaCentralDePagamentos.swift; sourceTree = "<group>"; };
+		5F6F32A823FBE7B500C73418 /* CentralDePagamentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralDePagamentos.swift; sourceTree = "<group>"; };
+		5F6F32AB23FBE7C700C73418 /* ComprovanteDePagamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComprovanteDePagamento.swift; sourceTree = "<group>"; };
+		5F6F32AC23FBE7C700C73418 /* CelulaDoComprovanteDePagamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelulaDoComprovanteDePagamento.swift; sourceTree = "<group>"; };
+		5F6F32AF23FBE7D700C73418 /* CelulaDaListaDePagamentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CelulaDaListaDePagamentos.swift; sourceTree = "<group>"; };
+		5F6F32B023FBE7D700C73418 /* ListaDePagamentos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaDePagamentos.swift; sourceTree = "<group>"; };
 		5F6F32B323FBE7EB00C73418 /* OutroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutroViewController.swift; path = "../../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/Scenes/Tab 2/OutroViewController.swift"; sourceTree = "<group>"; };
 		5F6F32B623FBE86E00C73418 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIFontExtension.swift; path = "../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/SharedStyle/UIFontExtension.swift"; sourceTree = "<group>"; };
 		5F6F32B723FBE86E00C73418 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = "../../../Example2-MVC-ViewCode/Example2-MVC-ViewCode/SharedStyle/UIColorExtension.swift"; sourceTree = "<group>"; };
+		5F6F32DD23FC28EF00C73418 /* ViewModelQuantidadeDePagamentos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelQuantidadeDePagamentos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				5F6F329123FBE65000C73418 /* Model */,
 				5F6F329C23FBE68300C73418 /* Network */,
 				5F6F329F23FBE6ED00C73418 /* Scenes */,
+				5F6F32DF23FC29D100C73418 /* View-Model */,
 				5F6F328123FBE5B400C73418 /* Assets.xcassets */,
 				5F6F328323FBE5B400C73418 /* LaunchScreen.storyboard */,
 				5F6F328623FBE5B400C73418 /* Info.plist */,
@@ -149,12 +152,9 @@
 		5F6F32A523FBE77200C73418 /* Tab 1 */ = {
 			isa = PBXGroup;
 			children = (
-				5F6F32A723FBE7B500C73418 /* CelulaDaCentralDePagamentos.swift */,
-				5F6F32A823FBE7B500C73418 /* CentralDePagamentos.swift */,
-				5F6F32AC23FBE7C700C73418 /* CelulaDoComprovanteDePagamento.swift */,
-				5F6F32AB23FBE7C700C73418 /* ComprovanteDePagamento.swift */,
-				5F6F32AF23FBE7D700C73418 /* CelulaDaListaDePagamentos.swift */,
-				5F6F32B023FBE7D700C73418 /* ListaDePagamentos.swift */,
+				5F6F32BA23FC08EC00C73418 /* A CentralDePagamentos */,
+				5F6F32BC23FC091200C73418 /* B ListaDePagamentos */,
+				5F6F32BB23FC090200C73418 /* C ComprovanteDePagamento */,
 			);
 			path = "Tab 1";
 			sourceTree = "<group>";
@@ -174,6 +174,41 @@
 				5F6F32B623FBE86E00C73418 /* UIFontExtension.swift */,
 			);
 			path = SharedStyle;
+			sourceTree = "<group>";
+		};
+		5F6F32BA23FC08EC00C73418 /* A CentralDePagamentos */ = {
+			isa = PBXGroup;
+			children = (
+				5F6F32A823FBE7B500C73418 /* CentralDePagamentos.swift */,
+				5F6F32A723FBE7B500C73418 /* CelulaDaCentralDePagamentos.swift */,
+			);
+			path = "A CentralDePagamentos";
+			sourceTree = "<group>";
+		};
+		5F6F32BB23FC090200C73418 /* C ComprovanteDePagamento */ = {
+			isa = PBXGroup;
+			children = (
+				5F6F32AB23FBE7C700C73418 /* ComprovanteDePagamento.swift */,
+				5F6F32AC23FBE7C700C73418 /* CelulaDoComprovanteDePagamento.swift */,
+			);
+			path = "C ComprovanteDePagamento";
+			sourceTree = "<group>";
+		};
+		5F6F32BC23FC091200C73418 /* B ListaDePagamentos */ = {
+			isa = PBXGroup;
+			children = (
+				5F6F32B023FBE7D700C73418 /* ListaDePagamentos.swift */,
+				5F6F32AF23FBE7D700C73418 /* CelulaDaListaDePagamentos.swift */,
+			);
+			path = "B ListaDePagamentos";
+			sourceTree = "<group>";
+		};
+		5F6F32DF23FC29D100C73418 /* View-Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F6F32DD23FC28EF00C73418 /* ViewModelQuantidadeDePagamentos.swift */,
+			);
+			path = "View-Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +297,7 @@
 				5F6F329A23FBE66D00C73418 /* TipoDePagamento.swift in Sources */,
 				5F6F32AA23FBE7B500C73418 /* CentralDePagamentos.swift in Sources */,
 				5F6F32AE23FBE7C700C73418 /* CelulaDoComprovanteDePagamento.swift in Sources */,
+				5F6F32DE23FC28EF00C73418 /* ViewModelQuantidadeDePagamentos.swift in Sources */,
 				5F6F32B423FBE7EB00C73418 /* OutroViewController.swift in Sources */,
 				5F6F329723FBE66D00C73418 /* WebServiceDecoder.swift in Sources */,
 				5F6F329B23FBE66D00C73418 /* PagamentosAgrupadosPorTipo.swift in Sources */,
