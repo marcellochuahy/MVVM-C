@@ -8,16 +8,20 @@
 
 import UIKit
 
+protocol ListaDePagamentosDelegate: class {
+  func pagarBoleto(indexPath: IndexPath)
+}
+
 class ListaDePagamentos: UITableViewController {
   
   // MARK: - Properties
+  weak var coordinator: ListaDePagamentosDelegate?
   var tipoDePagamento: TipoDePagamento?
   var paymentsDataSource: [PagamentosDoDia]?
   
   // MARK: - Life cycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    title = tipoDePagamento?.rawValue
     setupTableView()
   }
   
@@ -66,24 +70,29 @@ class ListaDePagamentos: UITableViewController {
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
     tableView.deselectRow(at: indexPath, animated: false)
-    
-    guard let key    = paymentsDataSource?[indexPath.section]?.keys.first else { return }
-    
-    let payments     = paymentsDataSource?[indexPath.section]?[key]
-    let beneficiario = payments?[indexPath.row].beneficiario ?? ""
-    let valorAPagar  = payments?[indexPath.row].valorAPagar ?? 0
-    
-    let destinationViewController = ComprovanteDePagamento()
-    destinationViewController.valorAPagar = valorAPagar
-    destinationViewController.beneficiario = beneficiario
-    
-    let navigationController = UINavigationController(rootViewController: destinationViewController)
-    
-    present(navigationController, animated: true, completion: nil)
+
+    coordinator?.pagarBoleto(indexPath: indexPath)
     
   }
   
-  
-  
+}
+
+// MARK: - Constructor
+extension ListaDePagamentos {
+  public class func instantiate(
+    
+    delegate: ListaDePagamentosDelegate?,
+    tipoDePagamento: TipoDePagamento?,
+    paymentsDataSource: [PagamentosDoDia]?
+  )
+    -> ListaDePagamentos
+  {
+    let viewController = ListaDePagamentos()
+    viewController.coordinator = delegate
+    viewController.title = "pagamentos \(tipoDePagamento?.rawValue ?? "")"
+    viewController.paymentsDataSource = paymentsDataSource
+
+    return viewController
+  }
 }
 

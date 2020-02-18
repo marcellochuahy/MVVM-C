@@ -10,11 +10,29 @@ import UIKit
 
 class TabBarController: UITabBarController {
   
-  let vc1 = CentralDePagamentos()
-  let vc2 = OutroViewController()
+  // let vc1 = CentralDePagamentos()
+  // let vc2 = OutroViewController()
+  
+  let coordinatorTab_1 = CoordinatorTab_1(navigationController: UINavigationController())
+  let coordinatorTab_2 = CoordinatorTab_2(navigationController: UINavigationController())
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    coordinatorTab_1.start()
+    coordinatorTab_2.start()
+    
+    viewControllers = [coordinatorTab_1.navigationController, coordinatorTab_2.navigationController]
+    
+    /// Tab bar background color
+    tabBar.barTintColor = UIColor.CustomStyle.lightOrange
+    
+    /// Tab bar icons color
+    tabBar.tintColor = .white
+    tabBar.unselectedItemTintColor = UIColor.CustomStyle.whiteAlpha50
+    
+    
+    /*
     
     /// View controllers
     
@@ -50,6 +68,8 @@ class TabBarController: UITabBarController {
     /// Tab bar icons color
     tabBar.tintColor = .white
     tabBar.unselectedItemTintColor = UIColor.CustomStyle.whiteAlpha50
+ 
+ */
     
   }
   

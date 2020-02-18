@@ -8,17 +8,20 @@
 
 import UIKit
 
+protocol ComprovanteDePagamentoDelegate: class {
+  func dismiss()
+}
 class ComprovanteDePagamento: UITableViewController {
   
   // MARK: - Properties
+  weak var coordinator: ComprovanteDePagamentoDelegate?
   var valorAPagar: Double?
   var beneficiario: String?
   
   // MARK: - Life cycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    title = "comprovante"
-    setupLeftBarButton()
+    //setupLeftBarButton()
     setupTableView()
   }
   
@@ -61,3 +64,28 @@ class ComprovanteDePagamento: UITableViewController {
   
   
 }
+
+// MARK: - Constructor
+extension ComprovanteDePagamento {
+  public class func instantiate(
+    delegate: ComprovanteDePagamentoDelegate?,
+    beneficiario: String,
+    valorAPagar: Double
+  )
+    -> ComprovanteDePagamento
+  {
+    let viewController = ComprovanteDePagamento()
+    viewController.title = "comprovante"
+    viewController.coordinator = delegate
+    viewController.beneficiario = beneficiario
+    viewController.valorAPagar = valorAPagar
+    
+    return viewController
+    
+  }
+}
+//var valorAPagar: Double?
+//var beneficiario: String?
+//
+//
+//ComprovanteDePagamento.instantiate(withBeneficiario: beneficiario, andValorAPagar valorAPagar: valorAPagar)

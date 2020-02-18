@@ -30,9 +30,7 @@ class CelulaDoComprovanteDePagamento: UITableViewCell {
     callsViewCodeMethodsInPreSetOrder()
   }
   
-  
 }
-
 
 extension CelulaDoComprovanteDePagamento: ViewCodeProtocol {
   
