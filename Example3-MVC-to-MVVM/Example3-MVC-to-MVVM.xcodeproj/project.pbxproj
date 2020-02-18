@@ -88,6 +88,7 @@
 		5F6F327723FBE5AE00C73418 /* Example3-MVC-to-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				5F6F328323FBE5B400C73418 /* LaunchScreen.storyboard */,
 				5F6F32B523FBE85E00C73418 /* SharedStyle */,
 				5F6F329023FBE63C00C73418 /* AppDelegate */,
 				5F6F329123FBE65000C73418 /* Model */,
@@ -95,7 +96,6 @@
 				5F6F329F23FBE6ED00C73418 /* Scenes */,
 				5F6F32DF23FC29D100C73418 /* View-Model */,
 				5F6F328123FBE5B400C73418 /* Assets.xcassets */,
-				5F6F328323FBE5B400C73418 /* LaunchScreen.storyboard */,
 				5F6F328623FBE5B400C73418 /* Info.plist */,
 			);
 			path = "Example3-MVC-to-MVVM";
