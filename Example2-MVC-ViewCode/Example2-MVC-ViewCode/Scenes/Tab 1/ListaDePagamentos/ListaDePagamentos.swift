@@ -17,14 +17,16 @@ class ListaDePagamentos: UITableViewController {
   // MARK: - Life cycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    initialSetup()
+    title = tipoDePagamento?.rawValue
+    setupTableView()
   }
   
   // MARK: - Methods
-  func initialSetup() {
-    title = tipoDePagamento?.rawValue
+  func setupTableView() {
     tableView.rowHeight = UITableView.automaticDimension
     tableView.estimatedRowHeight = 80
+    tableView.backgroundColor = UIColor.CustomStyle.white
+    tableView.register(CelulaDaListaDePagamentos.self, forCellReuseIdentifier: "cell")
   }
   
   // MARK: - Table view data source
@@ -45,7 +47,7 @@ class ListaDePagamentos: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    let cell = tableView.dequeueReusableCell(withIdentifier: "CelulaDaListaDePagamentos", for: indexPath) as! CelulaDaListaDePagamentos
+    let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CelulaDaListaDePagamentos
     
     guard let key = paymentsDataSource?[indexPath.section]?.keys.first else { return cell }
     
@@ -56,29 +58,32 @@ class ListaDePagamentos: UITableViewController {
     cell.beneficiarioLabel.numberOfLines = 0
     cell.beneficiarioLabel.text = beneficiario
     cell.valorAPagarLabel.text  = "\(valorAPagar)"
+    cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
     
     return cell
   }
   
-  // MARK: - Navigation
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-    let segueDestination = segue.destination
-    
-    if let destinationNavigationController = segueDestination as? UINavigationController,
-      let targetController = destinationNavigationController.topViewController as? ComprovanteDePagamento {
-      
-      guard let indexPath = self.tableView.indexPathForSelectedRow else { return }
-      guard let key    = paymentsDataSource?[indexPath.section]?.keys.first else { return }
-      let payments     = paymentsDataSource?[indexPath.section]?[key]
-      let beneficiario = payments?[indexPath.row].beneficiario ?? ""
-      let valorAPagar  = payments?[indexPath.row].valorAPagar ?? 0
-      targetController.valorAPagar = valorAPagar
-      targetController.beneficiario = beneficiario
-      
-    }
-    
+    tableView.deselectRow(at: indexPath, animated: false)
+
+    guard let key    = paymentsDataSource?[indexPath.section]?.keys.first else { return }
+
+    let payments     = paymentsDataSource?[indexPath.section]?[key]
+    let beneficiario = payments?[indexPath.row].beneficiario ?? ""
+    let valorAPagar  = payments?[indexPath.row].valorAPagar ?? 0
+
+    let destinationViewController = ComprovanteDePagamento()
+    destinationViewController.valorAPagar = valorAPagar
+    destinationViewController.beneficiario = beneficiario
+
+    let navigationController = UINavigationController(rootViewController: destinationViewController)
+
+    present(navigationController, animated: true, completion: nil)
+
   }
+  
+
   
 }
 

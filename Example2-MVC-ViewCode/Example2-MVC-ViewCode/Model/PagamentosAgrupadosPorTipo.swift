@@ -12,4 +12,13 @@ struct PagamentosAgrupadosPorTipo {
   var pagamentosVencidos:  [PagamentosDoDia] = []
   var pagamentosExcluidos: [PagamentosDoDia] = []
   
+  var pagamentosAVencerQtd: Int?
+  var pagamentosAVencerTotalAPagar: Double?
+  
+  var pagamentosVencidosQtd: Int?
+  var pagamentosVencidosTotalAPagar: Double?
+  
+  var pagamentosExcluidosQtd: Int?
+  var pagamentosExcluidosTotalAPagar: Double?
+  
 }
