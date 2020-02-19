@@ -116,7 +116,8 @@ Crie duas classes:
 **TabBarController: UITabBarController**
 **BlankViewController: UIViewController**
 
-TabBarController cri
+TabBarController criará a **Tab Bar** programaticamente.
+BlankViewController criará a tela da aba 2.
 
 Na classe **SceneDelegate**, substitua a função:
 ```
