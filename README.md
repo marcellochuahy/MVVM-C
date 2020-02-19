@@ -102,6 +102,43 @@ View Code
 --------------------------------
 Abandonar o StoryBoard permite agilizar o desenvolvimento a partir da utilização de snippets e técnicas de componentização, além de reduz os conflitos de merge.
 
+Selecione **Main.storyboard** e pressione **delete**
+Escolha a opção **Move to trash**
+Clique no nome do projeto e selecione o seu target
+Em General > Main interface > **deixe o campo vazio**
+Em Info.plist, clique no botão (-) para deletar a chave-valor **Storyboard Name: Main**
+
+Essa é a reconfiguração inicial. 
+Agora faremos alguns ajustes nos códigos.
+
+Crie duas classes:
+
+**TabBarController: UITabBarController**
+**BlankViewController: UIViewController**
+
+TabBarController cri
+
+Na classe **SceneDelegate**, substitua a função:
+```
+   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let _ = (scene as? UIWindowScene) else { return }
+    }
+```
+Por:
+```
+  func scene(_ scene: UIScene, 
+               willConnectTo session: UISceneSession, 
+               options connectionOptions: UIScene.ConnectionOptions) {
+    
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+ 
+    window = UIWindow(windowScene: windowScene)
+    window?.rootViewController = TabBarController()
+    window?.makeKeyAndVisible()
+    
+  }
+```
+
 MVVM
 --------------------------------
 Model View View-Model é uma evolução natural do MVC. Ele utiliza um componente adcional (a View-Model) que se responsabiliza pela manipulação dos dados "brutos" gerados pela Model. Isso retira do View-Controller responsabilidades que não deveriam estar relacionadas a este, evitando códigos gigantes por vezes encontrados nos View Controllers ( pejorativamente chamados "MVC - Massive View Controllers").
