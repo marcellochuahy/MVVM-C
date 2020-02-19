@@ -29,7 +29,6 @@
 		5F6F338723FD112900C73418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6F338A23FD112900C73418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6F338C23FD112900C73418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F6F339223FD118B00C73418 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5F6F339323FD1CB300C73418 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5F6F339523FD1D7100C73418 /* TypeOfPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfPayment.swift; sourceTree = "<group>"; };
 		5F6F339623FD1D7100C73418 /* PaymentsGroupedByType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsGroupedByType.swift; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		5F6F337223FD112400C73418 = {
 			isa = PBXGroup;
 			children = (
-				5F6F339223FD118B00C73418 /* README.md */,
 				5F6F337D23FD112400C73418 /* MVVM-C */,
 				5F6F337C23FD112400C73418 /* Products */,
 			);
