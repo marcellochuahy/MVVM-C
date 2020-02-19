@@ -95,8 +95,6 @@ label.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnch
 
 O resultado é esse:
 
-![setSelfSizingTableViewCells_1](https://user-images.githubusercontent.com/17011151/74830794-aca0bd00-52f2-11ea-8a31-6aeb23131805.png)
-
 ![setSelfSizingTableViewCells_3](https://user-images.githubusercontent.com/17011151/74830830-bc200600-52f2-11ea-8891-ad0a0c3a9b96.png)
 
 
