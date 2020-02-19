@@ -62,11 +62,12 @@ linha 53 | let beneficiary = payments?[indexPath.row].beneficiary
 linha 54 | let monetaryValueToPay = payments?[indexPath.row].monetaryValueToPay ?? 0
 linha 55 | 
 ----> 56 | cell.beneficiaryLabel.numberOfLines = 0 // <- zero means multiline in this context
-linha 57 | cell.beneficiaryLabel.text = beneficiary
-linha 58 | cell.monetaryValueToPay.text = "\(monetaryValueToPay)"
-linha 59 | 
-linha 60 | return cell
-linha 61 | }
+----> 57 | cell.beneficiarioLabel.adjustsFontForContentSizeCategory = true
+linha 58 | cell.beneficiaryLabel.text = beneficiary
+linha 59 | cell.monetaryValueToPay.text = "\(monetaryValueToPay)"
+linha 60 | 
+linha 61 | return cell
+linha 62 | }
 
 ...
 
