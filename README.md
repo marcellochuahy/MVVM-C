@@ -7,7 +7,13 @@ Self Sizing Table View Cells
 --------------------------------
 Como tornar as UITableViewCells responsivas ao seu contéudo interno, permitindo inclusive o redimensionamento de textos em benefício da acessibilidade ao usuário.
 
-Basta acrescentar 3 linhas no código da classe **PaymentsListTableViewController**:
+Toque no primeiro botão (pagamentos a vencer):
+![setSelfSizingTableViewCells_1](https://user-images.githubusercontent.com/17011151/74830794-aca0bd00-52f2-11ea-8a31-6aeb23131805.png)
+
+Na próxima tela você verá que a segunda célula não suporta o seu conteúdo:
+![setSelfSizingTableViewCells_2](https://user-images.githubusercontent.com/17011151/74830816-b62a2500-52f2-11ea-9778-eb2229a5f4fd.png)
+
+Para corrigir isso basta acrescentar 3 linhas no código da classe **PaymentsListTableViewController**:
 
 linha26 | tableView.rowHeight = UITableView.automaticDimension
 linha27 | tableView.estimatedRowHeight = 80 // estimated row height for 1 line
@@ -81,6 +87,12 @@ label.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnch
 
 }
 ```
+
+O resultado é esse:
+
+![setSelfSizingTableViewCells_1](https://user-images.githubusercontent.com/17011151/74830794-aca0bd00-52f2-11ea-8a31-6aeb23131805.png)
+
+![setSelfSizingTableViewCells_3](https://user-images.githubusercontent.com/17011151/74830830-bc200600-52f2-11ea-8891-ad0a0c3a9b96.png)
 
 
 View Code
