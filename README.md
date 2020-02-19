@@ -20,6 +20,7 @@ Na próxima tela você verá que a segunda célula não suporta o seu conteúdo:
 Para corrigir isso basta acrescentar 3 linhas no código da classe **PaymentsListTableViewController**:
 
 linha26 | tableView.rowHeight = UITableView.automaticDimension
+
 linha27 | tableView.estimatedRowHeight = 80 // estimated row height for 1 line
 
 linha56 | cell.textLabel?.numberOfLines = 0 // <- zero means multiline in this context
