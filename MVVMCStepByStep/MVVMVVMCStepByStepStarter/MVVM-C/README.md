@@ -68,16 +68,16 @@ O exemplo abaixo mostra o uso de constraints com View Code.
 ```
 func setupConstraints() {
 
-label.translatesAutoresizingMaskIntoConstraints = false
+  label.translatesAutoresizingMaskIntoConstraints = false
 
-NSLayoutConstraint.activate([
+  NSLayoutConstraint.activate([
 
-label.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor, constant: 8),
-label.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor, constant: 8),
-label.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor, constant: -8),
-label.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor, constant: -8)
+    label.topAnchor.constraint(equalTo: contentView.layoutMarginsGuide.topAnchor, constant: 8),
+    label.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor, constant: 8),
+    label.trailingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.trailingAnchor, constant: -8),
+    label.bottomAnchor.constraint(equalTo: contentView.layoutMarginsGuide.bottomAnchor, constant: -8)
 
-])
+  ])
 
 }
 ```
