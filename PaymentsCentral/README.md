@@ -26,14 +26,29 @@ Esse coordinator utiliza um array de View Controllers para exemplificar como um 
   ]
 ```
 
-Além disso, 3 child coordinators foram criados para demonstrar a utilização de navegações ramificadas a partir do main coordinator (fluxo roxo). Child coordinators podem ser utilizados para projetos mais complexos. Nesse exemplo cada child coordinator se encarrega de exibir um 
-unico View Controller A, B ou C conforme o caso.
-
-
-A tela 
+Além disso, 3 **child coordinators** foram criados para demonstrar a utilização de navegações ramificadas a partir do main coordinator (fluxo roxo). Child coordinators podem ser utilizados para projetos mais complexos. Nesse exemplo cada child coordinator se encarrega de exibir um unico View Controller A, B ou C conforme o caso.
 
 ### Tab 2
 
 Tab 2 é apenas uma View com um único label com label.text = "Em branco".
+
+## Self Sizing Cell
+
+Self Sizing Cell se relaciona a acessibilidade permitino o redimencionamento das células conforme seu contéudo, permitindo o ajuste do tamanho da fonte pelo usuário.
+
+Sua implementação requer 4 linhas de código:
+
+
+
+```
+// PaymentListTVC.swift
+
+  func setupTableView() {
+    /// ⚠️ uncomment to enable self sizing cell
+    // tableView.rowHeight = UITableView.automaticDimension
+    // tableView.estimatedRowHeight = 80
+    tableView.backgroundColor = UIColor.CustomStyle.white
+    tableView.register(PaymentListTVCell.self, forCellReuseIdentifier: "cell")
+  }
 
 
