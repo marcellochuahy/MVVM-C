@@ -55,10 +55,10 @@ class ProofOfPaymentTVC: UITableViewController {
     let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProofOfPaymentTVCell
 
     /// ⚠️  Before MVVM (comment to enable MVVM)
-    // cell.monetaryValueLabel.text = "R$ \(monetaryValue ?? 0)"
+    cell.monetaryValueLabel.text = "R$ \(monetaryValue ?? 0)"
     /// ⚠️ After MVVM (uncomment to enable MVVM)
-    let viewModelCurrency = ViewModelCurrency(monetaryValue: monetaryValue ?? 0)
-    cell.monetaryValueLabel.attributedText = viewModelCurrency.valorAttributedString
+    // let viewModelCurrency = ViewModelCurrency(monetaryValue: monetaryValue ?? 0)
+    // cell.monetaryValueLabel.attributedText = viewModelCurrency.valorAttributedString
 
     cell.beneficiaryLabel.text = beneficiary
     

@@ -17,17 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8hr-CC-3nm">
-                                <rect key="frame" x="112.5" y="397" width="189.5" height="102.5"/>
+                                <rect key="frame" x="112.5" y="435" width="189.5" height="26.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_itau" translatesAutoresizingMaskIntoConstraints="NO" id="z8S-gU-icb">
-                                        <rect key="frame" x="64.5" y="0.0" width="60" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="AZ6-ph-hev"/>
-                                            <constraint firstAttribute="height" constant="60" id="Im7-iI-H3w"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVVM-C Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2R-pd-4a9">
-                                        <rect key="frame" x="0.0" y="76" width="189.5" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="189.5" height="26.5"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -48,7 +41,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="logo_itau" width="41" height="40"/>
-    </resources>
 </document>
