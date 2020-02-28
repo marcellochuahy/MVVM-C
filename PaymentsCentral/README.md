@@ -12,7 +12,7 @@ Esse exemplo utiliza iOS 12.0 e Swift 4.2 e aborda os seguintes assuntos:
 
 O exemplo utiliza um Tab Bar Controller com 2 itens: **Tab 1** e **Tab 2**
 
-### Coordinator (Tab 1)
+## Coordinator (Tab 1)
 
 Tab 1 contêm um main coordinator que é responsável pelo fluxo de 3 telas: **central de pagamentos**, **lista de pagamentos** e **comprovante**.
 
