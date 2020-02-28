@@ -12,7 +12,7 @@ Esse exemplo utiliza iOS 12.0 e Swift 4.2 e aborda os seguintes assuntos:
 
 O exemplo utiliza um Tab Bar Controller com 2 itens: **Tab 1** e **Tab 2**
 
-### Tab 1
+### Coordinator (Tab 1)
 
 Tab 1 contêm um main coordinator que é responsável pelo fluxo de 3 telas: **central de pagamentos**, **lista de pagamentos** e **comprovante**.
 
@@ -66,5 +66,22 @@ Sua implementação requer 4 linhas de código:
 ## MVVM
 
 ![Captura de Tela 2020-02-28 às 10 09 05](https://user-images.githubusercontent.com/17011151/75551325-b91fc680-5a12-11ea-906e-902c135b7f83.png)
+
+
+```
+
+            /// ⚠️  Before MVVM (comment to enable MVVM)
+            // cell.numberOfPayments.text   = String(numberOfPayments)
+            // cell.monetaryValueLabel.text = String(totalMonetaryValue)
+            
+            /// ⚠️ After MVVM (uncomment to enable MVVM)
+            let viewModelNumberOfPaymentv = ViewModelNumberOfPayments(TypeOfPayment: .duePayment, numberOfPayments: numberOfPayments)
+            let viewModelCurrency         = ViewModelCurrency(monetaryValue: totalMonetaryValue)
+            cell.numberOfPayments.attributedText   = viewModelNumberOfPaymentv.quantidadeAttributedString
+            cell.monetaryValueLabel.attributedText = viewModelCurrency.valorAttributedString
+```
+
+
+
 
 
