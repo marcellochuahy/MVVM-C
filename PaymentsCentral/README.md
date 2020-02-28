@@ -55,10 +55,13 @@ Sua implementação requer 4 linhas de código:
     // ...
 
     cell.beneficiaryLabel.adjustsFontForContentSizeCategory = true
-    cell.beneficiaryLabel.numberOfLines = 0
+    cell.beneficiaryLabel.numberOfLines = 0 // <- unlimited number of lines
     
     // ...
     
   }
 
 ```
+
+## MVVM
+
