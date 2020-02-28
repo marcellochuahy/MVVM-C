@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5F6F338823FD112900C73418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6F338723FD112900C73418 /* Assets.xcassets */; };
 		5F6F338B23FD112900C73418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6F338923FD112900C73418 /* LaunchScreen.storyboard */; };
-		5F6F339423FD1CB300C73418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6F339323FD1CB300C73418 /* Main.storyboard */; };
 		5F6F339A23FD1D7100C73418 /* TypeOfPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F339523FD1D7100C73418 /* TypeOfPayment.swift */; };
 		5F6F339B23FD1D7100C73418 /* PaymentsGroupedByType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F339623FD1D7100C73418 /* PaymentsGroupedByType.swift */; };
 		5F6F339C23FD1D7100C73418 /* WebServiceDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F339723FD1D7100C73418 /* WebServiceDecoder.swift */; };
@@ -18,8 +17,12 @@
 		5F6F33A223FD1DA500C73418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33A023FD1DA500C73418 /* AppDelegate.swift */; };
 		5F6F33A323FD1DA500C73418 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33A123FD1DA500C73418 /* SceneDelegate.swift */; };
 		5F6F33A623FD1DD600C73418 /* webServicePagamentos.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F6F33A523FD1DD600C73418 /* webServicePagamentos.json */; };
-		5F6F33AC23FD1DF200C73418 /* PaymentsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33A823FD1DF200C73418 /* PaymentsListTableViewCell.swift */; };
+		5F6F33AC23FD1DF200C73418 /* PaymentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33A823FD1DF200C73418 /* PaymentListTableViewCell.swift */; };
 		5F6F33AE23FD1DF200C73418 /* PaymentsCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33AA23FD1DF200C73418 /* PaymentsCenterTableViewController.swift */; };
+		5F7E429023FD654C005F61AA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E428F23FD654C005F61AA /* TabBarController.swift */; };
+		5F7E429223FD65D2005F61AA /* BlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E429123FD65D2005F61AA /* BlankViewController.swift */; };
+		5F7E429423FD677F005F61AA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E429323FD677F005F61AA /* UIColorExtension.swift */; };
+		5F7E429623FD6799005F61AA /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7E429523FD6799005F61AA /* UIFontExtension.swift */; };
 		5F91B96B23FD444200B0A121 /* PaymentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F91B96A23FD444200B0A121 /* PaymentListTableViewController.swift */; };
 		5F91B96D23FD449800B0A121 /* ProofOfPaymentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F91B96C23FD449800B0A121 /* ProofOfPaymentTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -29,7 +32,6 @@
 		5F6F338723FD112900C73418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6F338A23FD112900C73418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6F338C23FD112900C73418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F6F339323FD1CB300C73418 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5F6F339523FD1D7100C73418 /* TypeOfPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeOfPayment.swift; sourceTree = "<group>"; };
 		5F6F339623FD1D7100C73418 /* PaymentsGroupedByType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsGroupedByType.swift; sourceTree = "<group>"; };
 		5F6F339723FD1D7100C73418 /* WebServiceDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceDecoder.swift; sourceTree = "<group>"; };
@@ -38,8 +40,12 @@
 		5F6F33A023FD1DA500C73418 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F6F33A123FD1DA500C73418 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5F6F33A523FD1DD600C73418 /* webServicePagamentos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = webServicePagamentos.json; sourceTree = "<group>"; };
-		5F6F33A823FD1DF200C73418 /* PaymentsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsListTableViewCell.swift; sourceTree = "<group>"; };
+		5F6F33A823FD1DF200C73418 /* PaymentListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentListTableViewCell.swift; sourceTree = "<group>"; };
 		5F6F33AA23FD1DF200C73418 /* PaymentsCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsCenterTableViewController.swift; sourceTree = "<group>"; };
+		5F7E428F23FD654C005F61AA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		5F7E429123FD65D2005F61AA /* BlankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankViewController.swift; sourceTree = "<group>"; };
+		5F7E429323FD677F005F61AA /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		5F7E429523FD6799005F61AA /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		5F91B96A23FD444200B0A121 /* PaymentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListTableViewController.swift; sourceTree = "<group>"; };
 		5F91B96C23FD449800B0A121 /* ProofOfPaymentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofOfPaymentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,10 +114,12 @@
 		5F6F33AF23FD1E1400C73418 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5F7E428F23FD654C005F61AA /* TabBarController.swift */,
 				5F6F33AA23FD1DF200C73418 /* PaymentsCenterTableViewController.swift */,
 				5F91B96A23FD444200B0A121 /* PaymentListTableViewController.swift */,
-				5F6F33A823FD1DF200C73418 /* PaymentsListTableViewCell.swift */,
+				5F6F33A823FD1DF200C73418 /* PaymentListTableViewCell.swift */,
 				5F91B96C23FD449800B0A121 /* ProofOfPaymentTableViewController.swift */,
+				5F7E429123FD65D2005F61AA /* BlankViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -128,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				5F6F338923FD112900C73418 /* LaunchScreen.storyboard */,
-				5F6F339323FD1CB300C73418 /* Main.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -138,6 +145,8 @@
 			children = (
 				5F6F338723FD112900C73418 /* Assets.xcassets */,
 				5F6F338C23FD112900C73418 /* Info.plist */,
+				5F7E429323FD677F005F61AA /* UIColorExtension.swift */,
+				5F7E429523FD6799005F61AA /* UIFontExtension.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -201,7 +210,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F6F339423FD1CB300C73418 /* Main.storyboard in Resources */,
 				5F6F338B23FD112900C73418 /* LaunchScreen.storyboard in Resources */,
 				5F6F338823FD112900C73418 /* Assets.xcassets in Resources */,
 				5F6F33A623FD1DD600C73418 /* webServicePagamentos.json in Resources */,
@@ -216,6 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F6F33A223FD1DA500C73418 /* AppDelegate.swift in Sources */,
+				5F7E429623FD6799005F61AA /* UIFontExtension.swift in Sources */,
+				5F7E429423FD677F005F61AA /* UIColorExtension.swift in Sources */,
 				5F6F33A323FD1DA500C73418 /* SceneDelegate.swift in Sources */,
 				5F91B96D23FD449800B0A121 /* ProofOfPaymentTableViewController.swift in Sources */,
 				5F91B96B23FD444200B0A121 /* PaymentListTableViewController.swift in Sources */,
@@ -224,8 +234,10 @@
 				5F6F339A23FD1D7100C73418 /* TypeOfPayment.swift in Sources */,
 				5F6F339C23FD1D7100C73418 /* WebServiceDecoder.swift in Sources */,
 				5F6F33AE23FD1DF200C73418 /* PaymentsCenterTableViewController.swift in Sources */,
+				5F7E429023FD654C005F61AA /* TabBarController.swift in Sources */,
 				5F6F339E23FD1D7100C73418 /* Payment.swift in Sources */,
-				5F6F33AC23FD1DF200C73418 /* PaymentsListTableViewCell.swift in Sources */,
+				5F6F33AC23FD1DF200C73418 /* PaymentListTableViewCell.swift in Sources */,
+				5F7E429223FD65D2005F61AA /* BlankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,14 +11,14 @@ import UIKit
 class PaymentsCenterTableViewController: UITableViewController {
   
   // MARK: - Outlets
-  @IBOutlet weak var numberOfDuePaymentsLabel: UILabel!
-  @IBOutlet weak var totalMonetaryValueOfDuePaymentsLabel: UILabel!
-  
-  @IBOutlet weak var numberOfOverduePaymentsLabel: UILabel!
-  @IBOutlet weak var totalMonetaryValueOfOverduePaymentsLabel: UILabel!
-  
-  @IBOutlet weak var numberOfExcludedPaymentsLabel: UILabel!
-  @IBOutlet weak var totalMonetaryValueOfExcludedPaymentsLabel: UILabel!
+//  @IBOutlet weak var numberOfDuePaymentsLabel: UILabel!
+//  @IBOutlet weak var totalMonetaryValueOfDuePaymentsLabel: UILabel!
+//
+//  @IBOutlet weak var numberOfOverduePaymentsLabel: UILabel!
+//  @IBOutlet weak var totalMonetaryValueOfOverduePaymentsLabel: UILabel!
+//
+//  @IBOutlet weak var numberOfExcludedPaymentsLabel: UILabel!
+//  @IBOutlet weak var totalMonetaryValueOfExcludedPaymentsLabel: UILabel!
   
   // MARK: - Properties
   var paymentsGroupedByType = PaymentsGroupedByType()
@@ -56,14 +56,14 @@ class PaymentsCenterTableViewController: UITableViewController {
           
           DispatchQueue.main.async { [weak self] in
             
-            self?.numberOfDuePaymentsLabel.text = "\(json.numberOfDuePayments) pagamentos a vencer"
-            self?.totalMonetaryValueOfDuePaymentsLabel.text = "R$ \(json.totalMonetaryValueOfDuePayments)"
-            
-            self?.numberOfOverduePaymentsLabel.text = "\(json.numberOfOverduePayments) pagamentos vencidos"
-            self?.totalMonetaryValueOfOverduePaymentsLabel.text = "R$ \(json.totalMonetaryValueOfOverduePayments)"
-            
-            self?.numberOfExcludedPaymentsLabel.text = "\(json.numberOfExcludedPayments) pagamentos excluídos"
-            self?.totalMonetaryValueOfExcludedPaymentsLabel.text = "R$ \(json.totalMonetaryValueOfExcludedPayments)"
+//            self?.numberOfDuePaymentsLabel.text = "\(json.numberOfDuePayments) pagamentos a vencer"
+//            self?.totalMonetaryValueOfDuePaymentsLabel.text = "R$ \(json.totalMonetaryValueOfDuePayments)"
+//            
+//            self?.numberOfOverduePaymentsLabel.text = "\(json.numberOfOverduePayments) pagamentos vencidos"
+//            self?.totalMonetaryValueOfOverduePaymentsLabel.text = "R$ \(json.totalMonetaryValueOfOverduePayments)"
+//            
+//            self?.numberOfExcludedPaymentsLabel.text = "\(json.numberOfExcludedPayments) pagamentos excluídos"
+//            self?.totalMonetaryValueOfExcludedPaymentsLabel.text = "R$ \(json.totalMonetaryValueOfExcludedPayments)"
           
           }
           

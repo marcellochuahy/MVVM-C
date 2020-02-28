@@ -18,7 +18,7 @@
 		5F6F33A223FD1DA500C73418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33A023FD1DA500C73418 /* AppDelegate.swift */; };
 		5F6F33A323FD1DA500C73418 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33A123FD1DA500C73418 /* SceneDelegate.swift */; };
 		5F6F33A623FD1DD600C73418 /* webServicePagamentos.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F6F33A523FD1DD600C73418 /* webServicePagamentos.json */; };
-		5F6F33AC23FD1DF200C73418 /* PaymentsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33A823FD1DF200C73418 /* PaymentsListTableViewCell.swift */; };
+		5F6F33AC23FD1DF200C73418 /* PaymentListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33A823FD1DF200C73418 /* PaymentListTableViewCell.swift */; };
 		5F6F33AE23FD1DF200C73418 /* PaymentsCenterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F33AA23FD1DF200C73418 /* PaymentsCenterTableViewController.swift */; };
 		5F91B96B23FD444200B0A121 /* PaymentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F91B96A23FD444200B0A121 /* PaymentListTableViewController.swift */; };
 		5F91B96D23FD449800B0A121 /* ProofOfPaymentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F91B96C23FD449800B0A121 /* ProofOfPaymentTableViewController.swift */; };
@@ -38,7 +38,7 @@
 		5F6F33A023FD1DA500C73418 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F6F33A123FD1DA500C73418 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5F6F33A523FD1DD600C73418 /* webServicePagamentos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = webServicePagamentos.json; sourceTree = "<group>"; };
-		5F6F33A823FD1DF200C73418 /* PaymentsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsListTableViewCell.swift; sourceTree = "<group>"; };
+		5F6F33A823FD1DF200C73418 /* PaymentListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentListTableViewCell.swift; sourceTree = "<group>"; };
 		5F6F33AA23FD1DF200C73418 /* PaymentsCenterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentsCenterTableViewController.swift; sourceTree = "<group>"; };
 		5F91B96A23FD444200B0A121 /* PaymentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentListTableViewController.swift; sourceTree = "<group>"; };
 		5F91B96C23FD449800B0A121 /* ProofOfPaymentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofOfPaymentTableViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			children = (
 				5F6F33AA23FD1DF200C73418 /* PaymentsCenterTableViewController.swift */,
 				5F91B96A23FD444200B0A121 /* PaymentListTableViewController.swift */,
-				5F6F33A823FD1DF200C73418 /* PaymentsListTableViewCell.swift */,
+				5F6F33A823FD1DF200C73418 /* PaymentListTableViewCell.swift */,
 				5F91B96C23FD449800B0A121 /* ProofOfPaymentTableViewController.swift */,
 			);
 			path = Scenes;
@@ -225,7 +225,7 @@
 				5F6F339C23FD1D7100C73418 /* WebServiceDecoder.swift in Sources */,
 				5F6F33AE23FD1DF200C73418 /* PaymentsCenterTableViewController.swift in Sources */,
 				5F6F339E23FD1D7100C73418 /* Payment.swift in Sources */,
-				5F6F33AC23FD1DF200C73418 /* PaymentsListTableViewCell.swift in Sources */,
+				5F6F33AC23FD1DF200C73418 /* PaymentListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

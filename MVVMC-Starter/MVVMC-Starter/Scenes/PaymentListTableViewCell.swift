@@ -1,5 +1,5 @@
 //
-//  PaymentsListTableViewCell.swift
+//  PaymentListTableViewCell.swift
 //  MVVM-C
 //
 //  Created by Marcello Chuahy on 15/02/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PaymentsListTableViewCell: UITableViewCell {
+class PaymentListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var beneficiaryLabel: UILabel!
     @IBOutlet weak var monetaryValueToPay: UILabel!

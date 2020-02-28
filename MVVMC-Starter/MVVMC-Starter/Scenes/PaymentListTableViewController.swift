@@ -45,7 +45,7 @@ class PaymentsListTableViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    let cell = tableView.dequeueReusableCell(withIdentifier: "PaymentsListTableViewCell", for: indexPath) as! PaymentsListTableViewCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "PaymentsListTableViewCell", for: indexPath) as! PaymentListTableViewCell
     
     guard let key = paymentsDataSource?[indexPath.section]?.keys.first else { return cell }
     
