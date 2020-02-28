@@ -1,24 +1,11 @@
-#  Exemplo
+# MVVM-C
 
-Esse código contempla exemplos de Self Sizing Cell, MVVM e Coordinator.
-Pesquisar pelo símbolo ⚠️ nas classes abaixo:
+Esse exemplo utiliza iOS 12.0 e Swift 4.2 e aborda os seguintes assuntos:
 
-## Self Sizing Cell
+Self Sizing Cell
+MVVM
+Coordinator
 
-- PaymentListTVC
-- ProofOfPaymentTVC
+## Telas
 
-## MVVM
 
-- DashboardDelegate
-- PaymentListTVC
-- ProofOfPaymentTVC
-
-## Coordinator
-
-- TabBarController
-- Coordinator
-- PaymentsCentralCoordinator
-- ChildCoordinatorA
-- ChildCoordinatorB
-- ChildCoordinatorC
