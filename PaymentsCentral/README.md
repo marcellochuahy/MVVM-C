@@ -16,7 +16,7 @@ O exemplo utiliza um Tab Bar Controller com 2 itens: **Tab 1** e **Tab 2**
 
 Tab 1 contêm um main coordinator que é responsável pelo fluxo de 3 telas: **central de pagamentos**, **lista de pagamentos** e **comprovante**.
 
-Esse coordinator utiliza um array de View Controllers para exemplificar como um mesmo View Controller pode ser reaporveitado para exibir conteúdo distinto:
+Esse coordinator utiliza um array de View Controllers para exemplificar como um mesmo View Controller pode ser reaproveitado para exibir conteúdo distinto (fluxo azul):
 
 ```
  private lazy var paymentListTVCs = [
@@ -24,6 +24,10 @@ Esse coordinator utiliza um array de View Controllers para exemplificar como um 
     PaymentListTVC.instantiate(coordinator: self, title: "pagamentos " + TypeOfPayment.overduePayment.rawValue, paymentsDataSource: paymentsGroupedByType.overduePayment),
     PaymentListTVC.instantiate(coordinator: self, title: "pagamentos " + TypeOfPayment.excludedPayment.rawValue, paymentsDataSource: paymentsGroupedByType.excludedPayment)
   ]
+```
+
+Além disso, 3 child coordinators foram criados para demonstrar a utilização de navegações ramificadas a partir do main coordinator (fluxo roxo). Child coordinators podem ser utilizados para projetos mais complexos. Nesse exemplo cada child coordinator se encarrega de exibir um 
+unico View Controller A, B ou C conforme o caso.
 
 
 A tela 
