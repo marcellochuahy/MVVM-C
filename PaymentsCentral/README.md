@@ -44,11 +44,21 @@ Sua implementação requer 4 linhas de código:
 // PaymentListTVC.swift
 
   func setupTableView() {
-    /// ⚠️ uncomment to enable self sizing cell
-    // tableView.rowHeight = UITableView.automaticDimension
-    // tableView.estimatedRowHeight = 80
-    tableView.backgroundColor = UIColor.CustomStyle.white
-    tableView.register(PaymentListTVCell.self, forCellReuseIdentifier: "cell")
+    tableView.rowHeight = UITableView.automaticDimension
+    tableView.estimatedRowHeight = 80
+  }
+  
+  // ...
+  
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    
+    // ...
+
+    cell.beneficiaryLabel.adjustsFontForContentSizeCategory = true
+    cell.beneficiaryLabel.numberOfLines = 0
+    
+    // ...
+    
   }
 
-
+```
