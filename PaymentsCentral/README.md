@@ -21,10 +21,8 @@ Esse coordinator utiliza um array de View Controllers para exemplificar como um 
 ```
  private lazy var paymentListTVCs = [
     PaymentListTVC.instantiate(coordinator: self, title: "pagamentos " + TypeOfPayment.duePayment.rawValue, paymentsDataSource: paymentsGroupedByType.duePayment),
-    PaymentListTVC.instantiate(coordinator: self, title: "pagamentos " + TypeOfPayment.overduePayment.rawValue,
-                               paymentsDataSource: paymentsGroupedByType.overduePayment),
-    PaymentListTVC.instantiate(coordinator: self, title: "pagamentos " + TypeOfPayment.excludedPayment.rawValue,
-                               paymentsDataSource: paymentsGroupedByType.excludedPayment)
+    PaymentListTVC.instantiate(coordinator: self, title: "pagamentos " + TypeOfPayment.overduePayment.rawValue, paymentsDataSource: paymentsGroupedByType.overduePayment),
+    PaymentListTVC.instantiate(coordinator: self, title: "pagamentos " + TypeOfPayment.excludedPayment.rawValue, paymentsDataSource: paymentsGroupedByType.excludedPayment)
   ]
 
 
