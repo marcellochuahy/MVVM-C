@@ -6,6 +6,6 @@ Esse exemplo utiliza iOS 12.0 e Swift 4.2 e aborda os seguintes assuntos:
 - MVVM
 - Coordinator
 
-## Telas
+## Fluxo de telas
 
 
