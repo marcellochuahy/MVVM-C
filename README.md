@@ -62,11 +62,12 @@ linha 53 | let beneficiary = payments?[indexPath.row].beneficiary
 linha 54 | let monetaryValueToPay = payments?[indexPath.row].monetaryValueToPay ?? 0
 linha 55 | 
 ----> 56 | cell.beneficiaryLabel.numberOfLines = 0 // <- zero means multiline in this context
-linha 57 | cell.beneficiaryLabel.text = beneficiary
-linha 58 | cell.monetaryValueToPay.text = "\(monetaryValueToPay)"
-linha 59 | 
-linha 60 | return cell
-linha 61 | }
+----> 57 | cell.beneficiarioLabel.adjustsFontForContentSizeCategory = true
+linha 58 | cell.beneficiaryLabel.text = beneficiary
+linha 59 | cell.monetaryValueToPay.text = "\(monetaryValueToPay)"
+linha 60 | 
+linha 61 | return cell
+linha 62 | }
 
 ...
 
@@ -101,6 +102,44 @@ O resultado é esse:
 View Code
 --------------------------------
 Abandonar o StoryBoard permite agilizar o desenvolvimento a partir da utilização de snippets e técnicas de componentização, além de reduz os conflitos de merge.
+
+Selecione **Main.storyboard** e pressione **delete**
+Escolha a opção **Move to trash**
+Clique no nome do projeto e selecione o seu target
+Em General > Main interface > **deixe o campo vazio**
+Em Info.plist, clique no botão (-) para deletar a chave-valor **Storyboard Name: Main**
+
+Essa é a reconfiguração inicial. 
+Agora faremos alguns ajustes nos códigos.
+
+Crie duas classes:
+
+**TabBarController: UITabBarController**
+**BlankViewController: UIViewController**
+
+TabBarController criará a **Tab Bar** programaticamente.
+BlankViewController criará a tela da aba 2.
+
+Na classe **SceneDelegate**, substitua a função:
+```
+   func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        guard let _ = (scene as? UIWindowScene) else { return }
+    }
+```
+Por:
+```
+  func scene(_ scene: UIScene, 
+               willConnectTo session: UISceneSession, 
+               options connectionOptions: UIScene.ConnectionOptions) {
+    
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+ 
+    window = UIWindow(windowScene: windowScene)
+    window?.rootViewController = TabBarController()
+    window?.makeKeyAndVisible()
+    
+  }
+```
 
 MVVM
 --------------------------------
