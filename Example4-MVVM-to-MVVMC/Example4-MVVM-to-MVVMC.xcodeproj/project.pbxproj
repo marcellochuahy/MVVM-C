@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		5F6F32F623FC3B0B00C73418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6F32F523FC3B0B00C73418 /* Assets.xcassets */; };
 		5F6F32F923FC3B0B00C73418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6F32F723FC3B0B00C73418 /* LaunchScreen.storyboard */; };
-		5F6F330823FC3C0800C73418 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F330623FC3C0800C73418 /* AppDelegate.swift */; };
-		5F6F330923FC3C0800C73418 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F330723FC3C0800C73418 /* SceneDelegate.swift */; };
 		5F6F331B23FC43AA00C73418 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F331A23FC43AA00C73418 /* UIColorExtension.swift */; };
 		5F6F331D23FC43B700C73418 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F331C23FC43B700C73418 /* UIFontExtension.swift */; };
 		5F6F331F23FC43CD00C73418 /* Pagamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F331E23FC43CD00C73418 /* Pagamento.swift */; };
@@ -35,6 +33,8 @@
 		5F6F334C23FC4F3300C73418 /* CoordinatorTab_1_pagamentosAVencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F334B23FC4F3300C73418 /* CoordinatorTab_1_pagamentosAVencer.swift */; };
 		5F6F334E23FC4F4B00C73418 /* CoordinatorTab_1_pagamentosVencidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F334D23FC4F4B00C73418 /* CoordinatorTab_1_pagamentosVencidos.swift */; };
 		5F6F335023FC4F5600C73418 /* CoordinatorTab_1_pagamentosExcluidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6F334F23FC4F5600C73418 /* CoordinatorTab_1_pagamentosExcluidos.swift */; };
+		5F7DE6DD26E2614A00BB67AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7DE6DC26E2614A00BB67AD /* AppDelegate.swift */; };
+		5F7DE6E026E2615600BB67AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7DE6DF26E2615600BB67AD /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +42,6 @@
 		5F6F32F523FC3B0B00C73418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6F32F823FC3B0B00C73418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6F32FA23FC3B0B00C73418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F6F330623FC3C0800C73418 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../Example3-MVC-to-MVVM/Example3-MVC-to-MVVM/AppDelegate/AppDelegate.swift"; sourceTree = "<group>"; };
-		5F6F330723FC3C0800C73418 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../Example3-MVC-to-MVVM/Example3-MVC-to-MVVM/AppDelegate/SceneDelegate.swift"; sourceTree = "<group>"; };
 		5F6F331A23FC43AA00C73418 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		5F6F331C23FC43B700C73418 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		5F6F331E23FC43CD00C73418 /* Pagamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagamento.swift; sourceTree = "<group>"; };
@@ -68,6 +66,8 @@
 		5F6F334B23FC4F3300C73418 /* CoordinatorTab_1_pagamentosAVencer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTab_1_pagamentosAVencer.swift; sourceTree = "<group>"; };
 		5F6F334D23FC4F4B00C73418 /* CoordinatorTab_1_pagamentosVencidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTab_1_pagamentosVencidos.swift; sourceTree = "<group>"; };
 		5F6F334F23FC4F5600C73418 /* CoordinatorTab_1_pagamentosExcluidos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTab_1_pagamentosExcluidos.swift; sourceTree = "<group>"; };
+		5F7DE6DC26E2614A00BB67AD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F7DE6DF26E2615600BB67AD /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +117,8 @@
 		5F6F330023FC3B8700C73418 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				5F6F330623FC3C0800C73418 /* AppDelegate.swift */,
-				5F6F330723FC3C0800C73418 /* SceneDelegate.swift */,
+				5F7DE6DF26E2615600BB67AD /* SceneDelegate.swift */,
+				5F7DE6DC26E2614A00BB67AD /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -313,14 +313,14 @@
 				5F6F332323FC43E800C73418 /* PagamentosDoDia.swift in Sources */,
 				5F6F332523FC43F700C73418 /* TipoDePagamento.swift in Sources */,
 				5F6F332723FC440F00C73418 /* WebServiceDecoder.swift in Sources */,
+				5F7DE6DD26E2614A00BB67AD /* AppDelegate.swift in Sources */,
+				5F7DE6E026E2615600BB67AD /* SceneDelegate.swift in Sources */,
 				5F6F333623FC457800C73418 /* ListaDePagamentos.swift in Sources */,
 				5F6F332E23FC450300C73418 /* TabBarController.swift in Sources */,
 				5F6F334C23FC4F3300C73418 /* CoordinatorTab_1_pagamentosAVencer.swift in Sources */,
 				5F6F334A23FC48A400C73418 /* Coordinator.swift in Sources */,
 				5F6F332123FC43DA00C73418 /* PagamentosAgrupadosPorTipo.swift in Sources */,
 				5F6F333823FC45A400C73418 /* CelulaDaListaDePagamentos.swift in Sources */,
-				5F6F330823FC3C0800C73418 /* AppDelegate.swift in Sources */,
-				5F6F330923FC3C0800C73418 /* SceneDelegate.swift in Sources */,
 				5F6F334823FC489600C73418 /* CoordinatorTab_2.swift in Sources */,
 				5F6F335023FC4F5600C73418 /* CoordinatorTab_1_pagamentosExcluidos.swift in Sources */,
 				5F6F333A23FC45C000C73418 /* ComprovanteDePagamento.swift in Sources */,
